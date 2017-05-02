@@ -12,12 +12,12 @@
 
 using Windows.UI.Xaml;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations.Behaviors
+namespace VKSaver.Toolkit.Animations.Behaviors
 {
     /// <summary>
     /// Non-generic convenience implementation to provide backwards compatibility.
     /// </summary>
-    /// <seealso cref="Microsoft.Toolkit.Uwp.UI.Animations.Behaviors.CompositionBehaviorBase{T}" />
+    /// <seealso cref="VKSaver.Toolkit.Animations.Behaviors.CompositionBehaviorBase{T}" />
     public abstract class CompositionBehaviorBase : CompositionBehaviorBase<UIElement>
     {
     }

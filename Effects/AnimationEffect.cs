@@ -17,7 +17,7 @@ using Windows.UI.Composition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Hosting;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
+namespace VKSaver.Toolkit.Animations.Effects
 {
     /// <summary>
     /// An abstract class that provides the mechanism to create

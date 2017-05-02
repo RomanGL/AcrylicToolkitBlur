@@ -12,7 +12,7 @@
 
 using Windows.UI.Composition;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// Defines an <see cref="EffectAnimationDefinition"/> which is used by

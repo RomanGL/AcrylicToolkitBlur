@@ -12,13 +12,13 @@
 
 using Windows.UI.Xaml;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations.Behaviors
+namespace VKSaver.Toolkit.Animations.Behaviors
 {
     /// <summary>
     /// A base class for all behaviors using composition.It contains some of the common propeties to set on a visual.
     /// </summary>
     /// <typeparam name="T">The type of the associated object.</typeparam>
-    /// <seealso cref="Microsoft.Toolkit.Uwp.UI.Animations.Behaviors.BehaviorBase{T}" />
+    /// <seealso cref="VKSaver.Toolkit.Animations.Behaviors.BehaviorBase{T}" />
     public abstract class CompositionBehaviorBase<T> : BehaviorBase<T>
         where T : UIElement
     {

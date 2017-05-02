@@ -12,7 +12,7 @@
 
 using Windows.UI.Composition;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// Defines an <see cref="EffectDirectPropertyChangeDefinition"/> which is used by

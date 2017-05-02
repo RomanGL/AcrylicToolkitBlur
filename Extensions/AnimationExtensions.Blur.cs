@@ -10,12 +10,12 @@
 // THE CODE OR THE USE OR OTHER DEALINGS IN THE CODE.
 // ******************************************************************
 
-using Microsoft.Toolkit.Uwp.UI.Animations.Effects;
+using VKSaver.Toolkit.Animations.Effects;
 using System.Threading.Tasks;
 using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// These extension methods perform animation on UIElements

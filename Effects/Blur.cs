@@ -17,12 +17,12 @@ using Windows.Foundation.Metadata;
 using Windows.UI.Composition;
 using Windows.UI.Xaml;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
+namespace VKSaver.Toolkit.Animations.Effects
 {
     /// <summary>
     /// An animation effect that applies blur.
     /// </summary>
-    /// <seealso cref="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect" />
+    /// <seealso cref="VKSaver.Toolkit.Animations.Effects.AnimationEffect" />
     public class Blur : AnimationEffect
     {
         CompositionSurfaceBrush m_noiseBrush;
@@ -46,9 +46,9 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
 
         protected override async Task OnCreate()
         {
-            m_noiseBrush = Compositor.CreateSurfaceBrush();
-            m_noiseBrush.Surface = await SurfaceLoader.LoadFromUri(new Uri("ms-appx:///Assets/Noise.jpg"));
-            m_noiseBrush.Stretch = CompositionStretch.None;
+            //m_noiseBrush = Compositor.CreateSurfaceBrush();
+            //m_noiseBrush.Surface = await SurfaceLoader.LoadFromUri(new Uri("ms-appx:///Assets/Noise.jpg"));
+            //m_noiseBrush.Stretch = CompositionStretch.None;
         }
 
         /// <summary>
@@ -68,18 +68,18 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
                 Source = new CompositionEffectSourceParameter("source")
             };
 
-            BlendEffect finalEffect = new BlendEffect
-            {
-                Foreground = new CompositionEffectSourceParameter("NoiseImage"),
-                Background = gaussianBlur,
-                Mode = BlendEffectMode.Screen,
-            };
+            //BlendEffect finalEffect = new BlendEffect
+            //{
+            //    Foreground = new CompositionEffectSourceParameter("NoiseImage"),
+            //    Background = gaussianBlur,
+            //    Mode = BlendEffectMode.Screen,
+            //};
 
             var propertyToChange = $"{EffectName}.BlurAmount";
             var propertiesToAnimate = new[] { propertyToChange };
             
-            EffectBrush = Compositor.CreateEffectFactory(finalEffect, propertiesToAnimate).CreateBrush();
-            EffectBrush.SetSourceParameter("NoiseImage", m_noiseBrush);
+            EffectBrush = Compositor.CreateEffectFactory(gaussianBlur, propertiesToAnimate).CreateBrush();
+            //EffectBrush.SetSourceParameter("NoiseImage", m_noiseBrush);
             EffectBrush.SetSourceParameter("source", Compositor.CreateHostBackdropBrush());
 
             return propertiesToAnimate;

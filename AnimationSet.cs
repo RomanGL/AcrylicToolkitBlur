@@ -19,7 +19,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Hosting;
 using Windows.UI.Xaml.Media.Animation;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// Defines an object for storing and managing CompositionAnimations for an element

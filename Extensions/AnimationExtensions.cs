@@ -16,7 +16,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// These extension methods perform animation on UIElements

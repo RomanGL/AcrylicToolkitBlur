@@ -12,7 +12,7 @@
 
 using System;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// AnimationSet Completed EventArgs.

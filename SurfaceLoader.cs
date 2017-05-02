@@ -20,7 +20,7 @@ using Windows.Graphics.DirectX;
 using Windows.UI;
 using Windows.UI.Composition;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// A delegate for load time effects.

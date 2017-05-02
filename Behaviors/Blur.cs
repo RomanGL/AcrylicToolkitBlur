@@ -12,7 +12,7 @@
 
 using Windows.UI.Xaml;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations.Behaviors
+namespace VKSaver.Toolkit.Animations.Behaviors
 {
     /// <summary>
     /// Performs an blur behind the window animation using composition.

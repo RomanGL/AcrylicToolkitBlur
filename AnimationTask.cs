@@ -13,7 +13,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Microsoft.Toolkit.Uwp.UI.Animations
+namespace VKSaver.Toolkit.Animations
 {
     /// <summary>
     /// Defines <see cref="AnimationTask"/> which is used by
