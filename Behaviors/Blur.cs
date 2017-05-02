@@ -50,11 +50,15 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Behaviors
         /// <summary>
         /// Starts the animation.
         /// </summary>
-        public override void StartAnimation()
+        public override async void StartAnimation()
         {
             if (AnimationExtensions.BlurEffect.IsSupported)
             {
-                AssociatedObject?.Blur(duration: Duration, delay: Delay, value: (float)Value)?.Start();
+                if (AssociatedObject == null)
+                    return;
+
+                var e = await AssociatedObject?.Blur(duration: Duration, delay: Delay, value: (float)Value);
+                e?.Start();
             }
         }
     }

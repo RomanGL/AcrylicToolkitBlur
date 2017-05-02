@@ -11,6 +11,7 @@
 // ******************************************************************
 
 using Microsoft.Toolkit.Uwp.UI.Animations.Effects;
+using System.Threading.Tasks;
 using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 
@@ -51,7 +52,7 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations
         /// An Animation Set.
         /// </returns>
         /// <seealso cref="IsBlurSupported" />
-        public static AnimationSet Blur(
+        public static Task<AnimationSet> Blur(
             this FrameworkElement associatedObject,
             double value = 0d,
             double duration = 500d,
@@ -77,7 +78,7 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations
         /// An Animation Set.
         /// </returns>
         /// <seealso cref="IsBlurSupported" />
-        public static AnimationSet Blur(
+        public static Task<AnimationSet> Blur(
             this AnimationSet animationSet,
             double value = 0d,
             double duration = 500d,

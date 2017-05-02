@@ -70,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Microsoft.Windows.Toolkit.UI.Animations.rd.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Noise.jpg" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

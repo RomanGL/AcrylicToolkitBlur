@@ -12,6 +12,7 @@
 
 using System;
 using System.Numerics;
+using System.Threading.Tasks;
 using Windows.UI.Composition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Hosting;
@@ -64,6 +65,8 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
         /// <returns>An array of strings of the effect properties to change.</returns>
         public abstract string[] ApplyEffect();
 
+        protected virtual async Task OnCreate() { }
+
         /// <summary>
         /// An animation which will apply the derived effect.
         /// </summary>
@@ -72,7 +75,7 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
         /// <param name="duration">The duration in milliseconds.</param>
         /// <param name="delay">The delay in milliseconds.</param>
         /// <returns>An animation set with the effect added to it.</returns>
-        public AnimationSet EffectAnimation(
+        public async Task<AnimationSet> EffectAnimation(
             AnimationSet animationSet,
             double value = 0d,
             double duration = 500d,
@@ -102,6 +105,8 @@ namespace Microsoft.Toolkit.Uwp.UI.Animations.Effects
             {
                 return null;
             }
+
+            await OnCreate();
 
             // check to see if the visual already has an effect applied.
             var spriteVisual = ElementCompositionPreview.GetElementChildVisual(associatedObject) as SpriteVisual;
